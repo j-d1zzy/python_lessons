@@ -1,0 +1,273 @@
+Coding Notes
+
+What is Programming?
+Attempting to get a computer to complete a specific task without making mistakes. 
+This is achieved through translating your instructions into machine code, a.k.a binary. Programming languages are a middle-man between human language and binary.
+Each language is unique and serve different purposes. For example, Java and Python are general purpose languages.
+HTML/CSS designed for specific tasks, web page design in this case.
+Languages vary in power. For instance, Javascript isn't used for big problems; whereas, Java and Python are.
+A programming language's power or level refers to its similarity to binary. Low-level programming languages are more similar to binary, and high-level programming languages are less similar to binary.
+Languages often come down to personal preference because many of them can achieve the same objectives.
+
+How to write code?
+To code, we use IDE's. IDE stands for Integrated Development Environment. This is a space where you can write, run and debug code, as well as convert it into machine code/binary.
+IDE's possess tools that are extremely useful for coders, such as error-checking, for when a code fails; auto-fill, for frequently used words; project hierarchy. 
+Every programming language has a unique syntax, and learning them is similar to learning any other language. Breaking the rules of a languages syntax will result in an error.
+Syntax is defined as 'the rules you must follow if you want your program to run correctly.' This includes how you type out certain functions, what ends each code line and how you set up certain functions.
+IDE's are very helpful for coding because they will often point out syntax errors within code. 
+
+How do we get information from computers: the console
+The main use of the console is to output text from the program using code. The print statement is one of the most functions in programming and exists in most programming languages. 
+Print statements print text to the console for the programmers viewing pleasure. 
+The print statement and console are important developer tools, and not meant to be interacted with by the end-user, except in very abstract cases, such as text-based games and simple programs. 
+Typically, the console is concealed behind the scenes, and developers shouldn't implement the console in the final product.
+
+What can computers do?
+Computers already know how to do simple arithmetic, including addition, subtraction, multiplication and division.
+You can print maths operations in IDE's, and mathematics is useful in almost every program that is written. 
+Programming languages contain an additional operator called modulus. This allows us to get the remainder of a divisional operation. 
+10 modulus 3 tells the computer to divide 10 by 3, ignore the answer and provide only the remainder. 10 modulus 3 will return an answer of 1. 
+As an example, modulus is great for identifying whether a number is even or not. 
+Strings are another way of saying text. Concatenation is adding strings together. 
+Numbers in speech marks will be treated as a string but numbers outside speech marks will be treated as integers.
+
+What are variables?
+Variables are something that can store information, like a cardboard box. The box can be referenced and manipulated. 
+Each variable has a type, name and a piece of information stored inside. 
+There are many different types of variables. Primitive variables include integers, like 2; booleans, as in true or false; floats, like pi; doubles, like 4.0; Strings, as in "Hello world"; and Chars, as in "A".
+An integer, or int for short, is a whole number. Integer variables will not include decimal values.
+A boolean variable can store a value of true or false. They are very useful for conditional statements.
+Floats and doubles are both floating point data types, this means they can store numbers with decimal places. Float variables can store up to 32 bits of information. 
+Double vaariables can store up to 64 bits of information. Therefore, doubles are useful for higher precision.
+String variables are strings of letters stored in a variable. These are useful for displaying text and storing input information. Useful for outputting info for the user. 
+Char variables contain a single character. Char variables are useful when a programmer wants to read one button press of one character in a string without using a string variable. 
+
+Why are variables useful?
+Storing information in an accessible format is important. Information stored in a variable can easily be referenced or modified. 
+Other useful uses include; taking input from the user; making your program have variability, which means having it change based on certain factors.
+
+How do we manipulate variables?
+Trying to reference a blank variable will result in a NullPointerException.
+After a code has run its course, variables are deleted in memory.
+Integer, float, and double variables can be added, subtracted, multiplied, divided and modulused. String variables can be added, and char's and boolean's cannot be operated on.
+Naming conventions are important. When naming a variable, they must be one continuous string. Most programmers name variables according to camelCase. 
+With camelCase you don't capitalize the first word, but then they capitalize the first letter of every word after it.
+
+What are conditional statements?
+These are statements that change the path of the code based on particular conditions.
+The most basic conditional statement is the If statement: If something is true, do this, otherwise do that. E.g. if (true thing) {do what's in curly brackets}
+The If statement contains a boolean function - the true/false object inside the braces.
+After the If statement, one might use an Else-If statement, which will run if the preceding If statement was bypassed due to it being false.
+Example: If (age = 10) print("You are ten") Else If (age = 12) print("You are 12.")
+An Else statement follows If or Else-if. 
+A statement that can help declutter code, whilst fulfilling similar functions to other conditional statements, is the Switch statement.
+Switch statements are written in the form of a Switch(var) and then lists cases for that variable followed by instructions for the given case. 
+You must always include default case for to encapsulate all cases that are not predesignated. This is very similar to the Else statement above.
+Conditional statements add variability to programming, allowing flexibility or mutability based on user input.
+
+What are arrays?
+An array is a list of something, and can include integers, strings, and even other arrays. All info in an array is related. 
+Arrays act much like columns in Google sheets: you have a title at the top, and like "Grocery List" and then many information pieces related to that title such as "Apple", "Toilet Paper" etc. 
+The most important thing to note about arrays is how we reference elements inside them. In programming we use indexes, which is the the items place in the array. Cells begin their count from 0. 
+So, in a number array from 1-10, 1 would be 0 in the index, 10, would be 9.
+When you create an array you can either populate the array with its elements immediately, creating and filing the array all at once. 
+Alternatively, you can define how many elements you want the array to hold, meaning the size of the array, and then specify the elements later. 
+This is because when you initialize an array it creates a space in memory that has exactly the size required for the array we have initialized, and all array sizes are final. 
+Initializing an array is like building a bookshelf, assuming all books are the same size. You can change WHICH books are on that shelf, but you can't add more books to the shelf than its maximum capacity.
+Array sizes are final! This is an essential characteristic of arrays because it allows easy access to indexes. 
+The only way to change an array size is to go back to the beginning of the code, where the array was defined.
+When an array is initialized, its type must be designated. It can be a string array, an integer array, a double array, but whatever the type chosen, all the entries in an array must be the same type. 
+Arrays inside an array are called a 2-dimensional array. Each index in the array is actually another array with its own indexes. 
+The first number is the row and the second is the column. 0, 2 would be in the first row and the second column down. 
+
+What are Loops?
+
+A loop is a statement that is used to run certain instructions repeatedly. Loops allow us to stop duplicated work.
+The For Loop is used when you want an instruction carried out numerous times. 
+For Loops require an integer value, a conditional statement (an integer that must be reached to exit the loop) and an operation to modify the integer value after the instructions inside the loop are completed.
+For example, for( int i = 0; i <3; i++) {System.out.println("Hello World")} will print Hello World, and then increase the value of i by 1 for each printed string. 
+This loop will print Hello World 3 times before terminating and moving on to the next line of code. 
+When using a for loop, you must make sure to set up a condition that, given the initial integer value and the operation, will at some point be met, allowing the code to terminate. 
+Otherwise, an infinite loop will occur.
+
+A For Each loop is used for iterating through entire arrays or lists. This means the loop will go through each element in the array and carry out a set of instructions for each value. This is useful for performing operations across an entire collection of data. 
+Example: 
+seq = [18,20,32] 
+for each x of seq 
+    print x 
+end
+
+The While Loop will continually carry out its instructions while a conditional statement given is true. It is similar to a for loop, but it is broken up.
+This loop can be used for intentional infinite loops.
+The Do-While Loop is functionally very similar to the while loop; however, this loop will always be carried out at least once, regardless of the conditional statement being true. After being carried out once, the loop will function as a normal while loop.
+Loops allow a programmer to perform operations many times in a row, allow you to iterate between arrays and lists, and decrease the clutter of a code.
+
+What are errors?
+
+There are three different types of errors: syntax, runtime, and logic errors.
+Syntax errors are typically the easiest to solve, are highlighted by IDEs in most cases, and are typically the result of failing to meet the programming rules. Similar to spelling errors in an esssay.
+Runtime errors don't appear until the programmer runs the code. These are caused by a statement in the code that seems logically sound but cannot compute it in a reasonable amount of time. 
+The most common form of runtime error is the infinite code. The best way to avoid runtime errors is to think carefully through the flow of your code before running it.
+Logic errors occur when there aren't any runtime or syntax errors, but the result isn't what the programmer intended. They are often the hardest kind of error to solve because the problem is harder to identify.
+
+How to debug code?
+First step: read the error.
+Second: Traverse to the line of code and check it.
+Third: Use online forums like StackOverflow. 
+Syntax and runtime errors are more easily fixable. Logic errors usually won't have error messages. In these cases, print statements can help the programmer identify what the issue is. 
+Whilst debugging the programmer can include a Breakpoint. Breakpoints pause the program at the line of the Breakpoint until the programmer is ready to continue. 
+When you find the section of error causing the error, first comment it out. Comments will not be read by the program as code. The designation for comments varies between programming languages.
+To prevent errors, backup code frequently. For this, version managers such as github and subversion can help as it allows you to easily access previous (working) versions of the code.
+This might allow you to identify which version of a code introduced an error.
+Another helpful tip is to run your program frequently.
+
+What are functions?
+
+Examples of functions include print statements, For loops and maths operators. So, what defines a function?
+A function is a segement of code that can be easily run by "calling" the function name.  
+With a print statement, we "call" the print function and enter the desired message in parentheses. Then, the computer performs the function.
+Behind the scenes, there is more complex code that translates the text and then taking it to the console to be printed. 
+Functions compartmentalise more complex code, abstracting it to a single line, removing the need for programmers to do it manually.
+Functions serve many purposes, recycling code, saving space and utilising equations with multiple inputs. Functions are extremely powerful.
+Although there are thousands of types of functions, you will usually only import the ones you require for your program. You import functions from packages inside your IDE.
+There are four main types of functions. These types are distinguished by whether or not they take in arguments, or whether or not they return values.
+
+What are arguments? Arguments are variables we pass into a function so that they can be manipulated before being 1) returned 2) printed to console 3) used in another operation.
+Arguments can be strings, arrays, pretty much any type of variable.
+Example: Max Function takes two arguments (two integers) and returns the higher one. Therefore, if you don't provide the Max function with two integers, you will get an error. 
+Arguments allow one function to do many things, add variability to programs, and helps diversify code.
+Functions can either return variables or not, and they can take in arguments or not. Calling the function will not do anything; first, it must return into something or be printed. 
+Alternatively, there are void functions. These are functions which take no arugments and return no values. They cannot be set to any variable since they return no values.
+Functions enable the programmer to make large changes to code easily. A function call is a copy of the function's code. 
+Changing that function will change all future calls of that function's code.
+
+How can we import functions? Importing functions allows access to libraries of pre-made functions. 
+A library is a collection of functions that all have the same theme e.g. a maths library, a data analysis library, a translation library. 
+Most functions you require that aren't hyper-specific to your program can be found in existing libraries.
+We import libraries using an import statement. This usually consists of the word "Import" followed by the library you would like to import.
+Example: Import Java.util.scanner being the library.package.class 
+If the required class is unknown, you can import all classes from a package with *. E.g. Import Java.util*
+IDEs will often prompt you to download a necessary package when an attempt to use a common function fails. 
+
+How do we make our own functions? 
+
+Functions have naming conventions. 1. Functions cannot be two words. 2. They should usually follow the camelCase convention.
+Each language has a different way to signify that something is a function.
+In Java, you have to define a functions scope (it tells the computer which parts of the code can use the function and which can't).
+Then, you determine which kind of function it is. 
+scope return_type function_type
+public void printstatement()
+
+In Python, this would look very different. 
+define function_name()
+def printStats()
+
+Now, a void function that takes in arguments:
+We put any variables we want the user to pass into the function inside the parentheses. When we call the fucntion, we must pass those variables in as arguments.
+E.g. Public void productCalculator (int num1, num2) {
+    system.out.println(num1 * num2);
+}
+
+productCalculator(5, 8); This will print out 40 to the console. 
+
+You can mix variable types when you making arguments. For instance, public void someFunction(char a, int num1, String str1, String str2) {}
+
+When you call a function, you must follow the variables you defined when making the function. 
+
+Now, functions that return values that don't take in arguments.
+In Java, you have to define what type of variable will be returned from the function. I.E. scope variable_type function(variable x) public int productCalculator (5, 8) {}
+No matter what path your code takes, it must return a variable. Also, you cannot return one type of variable if you have already defined the function to return another type.
+Example: Public int returnInteger () {
+    return("I am returning a string");
+} 
+This would be erroneous.
+
+Now, returns variables and takes in arguments.
+1. Assign arguments between parentheses 2. Define what you want to return. 3. Ensure the code returns something on all paths.
+
+Public int exampleFunction (int num1, String str1) {
+    if (num1 == 5) {
+        return 5;
+        else {
+            return 10;
+        }
+    }
+}
+
+What are ArrayLists and Dictionaries?
+
+ArrayLists or Lists are a growing array which dynamically changes its size. It starts with an initial size of 10. 
+This is useful when you are ignorant of the exact number of values required, or when you desire flexibility in array size.
+
+A dictionary is an array in that it stores multiple values.
+However, instead of being referenced linearly, each value is tied to an identifier that is used to reference it, called its "Key".
+When referencing a value in a dictionary, you must use its unique key, and the dictionary will tell you which value it is tied to. 
+Keys must be unique or the dictionary will not know which value is being referred to by the key.
+Dictionaries are iterable, meaning you can go through a dictionary and perform operations and comparisons on all values within.
+
+Arrays, ArrayLists and Dictionaries have their own bonuses and maluses. 
+
+How can we use Data Structures?
+
+Searching Algorithms are ways in which we can look through a list of values stored in an array and find a particular piece of data.
+Lists can either be sorted or unsorted. Sorted lists are characterized by a hierarchical value, like alphabets, numerical value, etc. 
+Both sorted and unsorted lists are used in programming, so it is useful to know common searching practice for both.
+The efficiency of a searching algorithms using two values: the worst case scenario and the average number of items. This is known as the Big O notation.
+The Big O notation allows us to compare the efficiency of different searching algorithms. 
+
+The Linear Search starts at the beginning and systematically checks each data point until the desired data point is located. 
+The Big 0 for a linear search is 0(n) n being the entire length of the array, which would be the worst case scenario, and the average would be 0(n/2)
+Linear searches can work on both sorted and unsorted lists. However, if your list is sorted, there are more optimal search algorithms.
+
+The Binary Search uses a recursive process into smaller and smaller parts for better efficiency.
+The middle value is compared to the desired value. 
+Depending on which half of the list contains the desired value based on the sorting method, the algorithm repeats this process until the desired value is located.
+In most cases, when you have a sorted list the binary search is much more efficient. 
+
+What is recursion?
+
+Recursion refers to functions that repeatedly call themselves. 
+A good example is a function that totals all numbers from 1 to n. 
+public int recursiveSum(int n) 
+{
+    if (n <= 1) {
+        return n;
+    } else {
+        return (n + recursiveSum(n-1));
+    }
+}
+
+A stack is a data structure which contains all of the tasks you instruct your program to complete. Based on a certain method, your program will carry out the tasks you give it.
+Our programs follow the LIFO (last in first out) structure. This means the last item put on the stack will be the first one removed.
+If you create a recursive function with no reachable base case then processes will be infinitely added to the stack, causing a stack overflow error.
+Recursion is extremely useful for breaking large problems into a stack of smaller problems. 
+
+What is Pseudocode?
+
+Most programmers describe most of their job as thinking about code, rather than writing it.
+Pseudocode is like a blueprint for your code. It is used for planning a code before actually trying to write it. 
+Psuedocode can take many different forms. The most common forms include flowcharts, chronological write-up, and functionality planning.
+Flowcharts are great for preventing the need to debug, write-ups are good for planning quickly and establishing program goals, and functionality planning establishes priorities.
+Flowcharts help programmers think through the flow of functions. 
+Write-ups help crystallise the ideas behind a program.
+Functionality planning can help the programmer identify what features must be coded.
+
+How to choose the right language?
+Different languages are better for different tasks. 
+Higher-level languages have higher abstract from machine languages and are easier to learn.
+Lower-level languages are closer to machine code, harder to learn, and provide more functionality.
+HTML and CSS are great for web development. HTML is a markup language for writing the content of websites. CSS is used for styling a website.
+
+Scripting languages have many commands for you to use, and can be run without needing to be compiled. They are also easier to port between OSs. Also used in web development.
+Examples of scripting languages include Pearl, php, Ajax and Javascript.
+
+General purpose languages offer a wide variety of uses and applications, and are great basic languages. These should probably be your go-to languages. Learn one well.
+These include Java (Game/web development), Python (analysis) and C++ (application/system programs).
+
+What is my next step? 
+
+1. Research a language that interests me. Use official websites and Wikipedia page to conduct the research and decide whether to pursue that path.
+2. Learn the language, beginning with an introductory video. 
+3. Start programming using websites that provide prompts, like CodingBat, CoderByte, and HackerRank.
+4. Take available classes. 
+5. Contribute to projects on github.
