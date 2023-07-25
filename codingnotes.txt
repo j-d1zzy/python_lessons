@@ -1,6 +1,7 @@
 Coding Notes
 
 What is Programming?
+
 Attempting to get a computer to complete a specific task without making mistakes. 
 This is achieved through translating your instructions into machine code, a.k.a binary. Programming languages are a middle-man between human language and binary.
 Each language is unique and serve different purposes. For example, Java and Python are general purpose languages.
@@ -10,6 +11,7 @@ A programming language's power or level refers to its similarity to binary. Low-
 Languages often come down to personal preference because many of them can achieve the same objectives.
 
 How to write code?
+
 To code, we use IDE's. IDE stands for Integrated Development Environment. This is a space where you can write, run and debug code, as well as convert it into machine code/binary.
 IDE's possess tools that are extremely useful for coders, such as error-checking, for when a code fails; auto-fill, for frequently used words; project hierarchy. 
 Every programming language has a unique syntax, and learning them is similar to learning any other language. Breaking the rules of a languages syntax will result in an error.
@@ -17,12 +19,14 @@ Syntax is defined as 'the rules you must follow if you want your program to run 
 IDE's are very helpful for coding because they will often point out syntax errors within code. 
 
 How do we get information from computers: the console
+
 The main use of the console is to output text from the program using code. The print statement is one of the most functions in programming and exists in most programming languages. 
 Print statements print text to the console for the programmers viewing pleasure. 
 The print statement and console are important developer tools, and not meant to be interacted with by the end-user, except in very abstract cases, such as text-based games and simple programs. 
 Typically, the console is concealed behind the scenes, and developers shouldn't implement the console in the final product.
 
 What can computers do?
+
 Computers already know how to do simple arithmetic, including addition, subtraction, multiplication and division.
 You can print maths operations in IDE's, and mathematics is useful in almost every program that is written. 
 Programming languages contain an additional operator called modulus. This allows us to get the remainder of a divisional operation. 
@@ -32,6 +36,7 @@ Strings are another way of saying text. Concatenation is adding strings together
 Numbers in speech marks will be treated as a string but numbers outside speech marks will be treated as integers.
 
 What are variables?
+
 Variables are something that can store information, like a cardboard box. The box can be referenced and manipulated. 
 Each variable has a type, name and a piece of information stored inside. 
 There are many different types of variables. Primitive variables include integers, like 2; booleans, as in true or false; floats, like pi; doubles, like 4.0; Strings, as in "Hello world"; and Chars, as in "A".
@@ -43,10 +48,12 @@ String variables are strings of letters stored in a variable. These are useful f
 Char variables contain a single character. Char variables are useful when a programmer wants to read one button press of one character in a string without using a string variable. 
 
 Why are variables useful?
+
 Storing information in an accessible format is important. Information stored in a variable can easily be referenced or modified. 
 Other useful uses include; taking input from the user; making your program have variability, which means having it change based on certain factors.
 
 How do we manipulate variables?
+
 Trying to reference a blank variable will result in a NullPointerException.
 After a code has run its course, variables are deleted in memory.
 Integer, float, and double variables can be added, subtracted, multiplied, divided and modulused. String variables can be added, and char's and boolean's cannot be operated on.
@@ -54,6 +61,7 @@ Naming conventions are important. When naming a variable, they must be one conti
 With camelCase you don't capitalize the first word, but then they capitalize the first letter of every word after it.
 
 What are conditional statements?
+
 These are statements that change the path of the code based on particular conditions.
 The most basic conditional statement is the If statement: If something is true, do this, otherwise do that. E.g. if (true thing) {do what's in curly brackets}
 The If statement contains a boolean function - the true/false object inside the braces.
@@ -66,6 +74,7 @@ You must always include default case for to encapsulate all cases that are not p
 Conditional statements add variability to programming, allowing flexibility or mutability based on user input.
 
 What are arrays?
+
 An array is a list of something, and can include integers, strings, and even other arrays. All info in an array is related. 
 Arrays act much like columns in Google sheets: you have a title at the top, and like "Grocery List" and then many information pieces related to that title such as "Apple", "Toilet Paper" etc. 
 The most important thing to note about arrays is how we reference elements inside them. In programming we use indexes, which is the the items place in the array. Cells begin their count from 0. 
@@ -111,6 +120,7 @@ The most common form of runtime error is the infinite code. The best way to avoi
 Logic errors occur when there aren't any runtime or syntax errors, but the result isn't what the programmer intended. They are often the hardest kind of error to solve because the problem is harder to identify.
 
 How to debug code?
+
 First step: read the error.
 Second: Traverse to the line of code and check it.
 Third: Use online forums like StackOverflow. 
@@ -132,7 +142,9 @@ Functions serve many purposes, recycling code, saving space and utilising equati
 Although there are thousands of types of functions, you will usually only import the ones you require for your program. You import functions from packages inside your IDE.
 There are four main types of functions. These types are distinguished by whether or not they take in arguments, or whether or not they return values.
 
-What are arguments? Arguments are variables we pass into a function so that they can be manipulated before being 1) returned 2) printed to console 3) used in another operation.
+What are arguments? 
+
+Arguments are variables we pass into a function so that they can be manipulated before being 1) returned 2) printed to console 3) used in another operation.
 Arguments can be strings, arrays, pretty much any type of variable.
 Example: Max Function takes two arguments (two integers) and returns the higher one. Therefore, if you don't provide the Max function with two integers, you will get an error. 
 Arguments allow one function to do many things, add variability to programs, and helps diversify code.
@@ -141,7 +153,9 @@ Alternatively, there are void functions. These are functions which take no arugm
 Functions enable the programmer to make large changes to code easily. A function call is a copy of the function's code. 
 Changing that function will change all future calls of that function's code.
 
-How can we import functions? Importing functions allows access to libraries of pre-made functions. 
+How can we import functions? 
+
+Importing functions allows access to libraries of pre-made functions. 
 A library is a collection of functions that all have the same theme e.g. a maths library, a data analysis library, a translation library. 
 Most functions you require that aren't hyper-specific to your program can be found in existing libraries.
 We import libraries using an import statement. This usually consists of the word "Import" followed by the library you would like to import.
@@ -253,6 +267,7 @@ Write-ups help crystallise the ideas behind a program.
 Functionality planning can help the programmer identify what features must be coded.
 
 How to choose the right language?
+
 Different languages are better for different tasks. 
 Higher-level languages have higher abstract from machine languages and are easier to learn.
 Lower-level languages are closer to machine code, harder to learn, and provide more functionality.
