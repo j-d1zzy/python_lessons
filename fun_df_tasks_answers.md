@@ -4,7 +4,7 @@
 
 Create a Dwarf class. Each Dwarf should have a name, profession, and a happiness level. Allow these to be set during initialization and retrieved via methods. For extra complexity, add a method that allows you to change a Dwarf's profession.
 
-```js
+```py
 class Dwarf:
     def __init__(self, name, profession, happiness):
         self.name = name
@@ -22,7 +22,7 @@ class Dwarf:
 
 Create a function that randomly generates Dwarfs with names, professions, and a happiness level. Store these Dwarfs in a list.
 
-```js
+```py
 import random
 
 names = ['Urist', 'Zan', 'Meng', 'Datan', 'Logem', 'Rith', 'Sibrek']
@@ -42,7 +42,7 @@ def generate_dwarfs(n):
 
 Create a basic simulation of a Dwarf Fortress year. Over the course of the year, Dwarfs' happiness can change - each month, roll a die for each Dwarf. On a 1 or 2, decrease happiness by one. On a 5 or 6, increase happiness by one.
 
-```js
+```py
 def simulate_year(dwarfs):
     for _ in range(12):
         for dwarf in dwarfs:
@@ -57,7 +57,7 @@ def simulate_year(dwarfs):
 
 At the end of the year, print a report of your Dwarfs - their names, professions, and happiness levels.
 
-```js
+```py
 def print_report(dwarfs):
     print("Annual Dwarf Report:")
     for dwarf in dwarfs:
@@ -68,7 +68,7 @@ def print_report(dwarfs):
 
 Put it all together. Generate a list of Dwarfs, simulate a year, then print a report.
 
-```js
+```py
 def play_game():
     dwarfs = generate_dwarfs(7)
     simulate_year(dwarfs)
