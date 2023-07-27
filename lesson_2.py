@@ -238,3 +238,28 @@
 
 #     # end of our game loop
 
+# For Loops
+
+# for letter in "Giraffe Academy":
+#     print(letter)
+
+# The simple For Loop above prints each letter individually. 
+
+# friends = ["Jim", "Karen", "Kevin"]
+
+# for friend in friends:
+#     print(friend)
+
+# The word friend can actually be anything, as the word friend merely refers to the index for the given range. See below:
+
+# for person in friends:
+#     print(person)
+
+# Or, for instance:
+
+# for index in range(len(friends)):
+#     print(index+1)
+
+#The for loop above can be used to communicate the number of objects in a given array, in this case the friends array. 
+
+Exponent Functions
