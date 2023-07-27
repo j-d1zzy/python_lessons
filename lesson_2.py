@@ -262,4 +262,28 @@
 
 #The for loop above can be used to communicate the number of objects in a given array, in this case the friends array. 
 
-Exponent Functions
+# Exponent Functions
+
+# def no_to_power(base_num, pow_num):
+#     result = 1
+#     for index in range(pow_num):
+#         result = result * base_num
+#     return result
+
+# print(no_to_power(15,2))
+
+# 2D Lists and Nested Loops
+
+# nu_grid = [
+#     [1,2,3],
+#     [4,5,6],
+#     [7,8,9],
+#     [0]
+# ]
+
+# print(nu_grid[3][0])
+
+# for row in nu_grid:
+#     for col in row:
+#         print(col)
+
