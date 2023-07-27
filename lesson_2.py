@@ -1,10 +1,10 @@
 # The lesson seems to discuss a lot of different specific functions and how they can be implemented in lists.
 
-dwarves = ["Uthar", "Areb", "Momuz", "Moldath", "Olin", "Olon", "Lor"]
+# dwarves = ["Uthar", "Areb", "Momuz", "Moldath", "Olin", "Olon", "Lor"]
 
 # The above is an example of a list in python.
 
-dwarves.sort()
+# dwarves.sort()
 
 # This is an example of a list having one of the in-built python functions applied to it. In this case, the list will be sorted into ascending order.
 # Similarly, if we had a list of numbers and applied the same sort function to it, we would have a list in descending order. 
@@ -13,7 +13,7 @@ dwarves.sort()
 
 # A tuple is a container where we can store different values. It is similar to a list, but it has a few key differences. A good example of a tuple is co-ordinates.
 
-coordinates = (4, 5) # So this is a co-ordinate and also a tuple. An important thing to note is that tuples are immutable once they are set.
+# coordinates = (4, 5) # So this is a co-ordinate and also a tuple. An important thing to note is that tuples are immutable once they are set.
 
 # print(coordinates[0]) # This will return 4 in the print statement. {Put into notes to declutter terminal}.
 
@@ -22,8 +22,8 @@ coordinates = (4, 5) # So this is a co-ordinate and also a tuple. An important t
 #Functions - A function is, in simple terms, a collection of code that performs a specific task. Consequently, calling functions are extremely helpful 
 # for efficient coding. In Python, we create functions as follows:
 
-def say_hi(name, age): 
-    print("Hello " + name + ", you are " + str(age) + " years old!")
+# def say_hi(name, age): 
+#     print("Hello " + name + ", you are " + str(age) + " years old!")
 
 # Note: Python code must be indented, anything outside the indent will not be included in the function.
 
@@ -32,10 +32,10 @@ def say_hi(name, age):
 # Functions can also be passed parameters - a piece of information provided for the function to use. This is done above. You can have multiple parameters. See above.
 # Sometimes when we call a function we want information to be communicated from the task. This is the use of the return function.
 
-def cube(num):
-    return num*num*num
+# def cube(num):
+#     return num*num*num
     
-result = cube(25)
+# result = cube(25)
 # print(result) {Put in notes to declutter terminal.}
 
 # It is important to note that no code can be included in a function after the line of code with the return statement. Also, return statements can print any 
@@ -49,9 +49,9 @@ result = cube(25)
 # otherwise if dwarf is both
 #     dwarf takes minced meal 
 
-in_tavern = True
-is_hungry = False
-is_thirsty = False
+# in_tavern = True
+# is_hungry = False
+# is_thirsty = False
 
 # {Put into notes to declutter terminal.}if in_tavern:
 #     print("The dwarf is in the tavern.")
@@ -69,13 +69,13 @@ is_thirsty = False
 
 # Comparisons can be made inside if statements. 
 
-def oldest_dwarf(age1, age2, age3):
-    if age1 >= age2 and age1 >=age3:
-        return age1
-    elif age2 >= age1 and age2 >= age3:
-        return age2
-    else:
-        return age3
+# def oldest_dwarf(age1, age2, age3):
+#     if age1 >= age2 and age1 >=age3:
+#         return age1
+#     elif age2 >= age1 and age2 >= age3:
+#         return age2
+#     else:
+#         return age3
     
 # {Put into notes to declutter terminal.} print(oldest_dwarf(56, 174, 122))
 
