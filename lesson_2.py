@@ -140,52 +140,50 @@ def oldest_dwarf(age1, age2, age3):
 # {Put into notes to declutter terminal.} print("Done with loop!")
 
 # Guessing game!
-# here jord
-import random
 
-# insult = ["wretch", "imbecile", ""]
-foods = ["bacon", "sausage", "tuna"]
+# import random
 
-guess = ""
-guesses = 3
-out_of_guesses = False
-total_participants = 1
-game_is_on = True
+# foods = ["bacon", "sausage", "tuna"]
+# guess = ""
+# guesses = 3
+# out_of_guesses = False
+# total_participants = 1
+# game_is_on = True
 
-while game_is_on:
-    print(f"Welcome to the Guessing Game, participant #{total_participants}")
-    print(f"If you would like to quit the game at any time, name thyself 'Quit'")
+# while game_is_on:
+#     print(f"Welcome to the Guessing Game, participant #{total_participants}")
+#     print(f"If you would like to quit the game at any time, name thyself 'Quit'")
 
-    name= input("What is your name? ")
-    if name.lower() == "quit":
-        game_is_on = False
-        break
+#     name= input("What is your name? ")
+#     if name.lower() == "quit":
+#         game_is_on = False
+#         break
 
-    secret_word = random.choice(foods)
+#     secret_word = random.choice(foods)
 
-    while guess != secret_word and not (out_of_guesses):
-        if guesses <= 3 and guesses > 0:
-            print(f"You have {guesses} attempts left, {name}.")
-            guess = input(f"Enter your guess, {name} (HINT: the word is a popular breakfast meat): ").lower()
-            if guess.lower() == 'quit':
-                break
-            guesses -= 1
-        else: 
-            out_of_guesses = True
+#     while guess != secret_word and not (out_of_guesses):
+#         if guesses <= 3 and guesses > 0:
+#             print(f"You have {guesses} attempts left, {name}.")
+#             guess = input(f"Enter your guess, {name} (HINT: the word is a popular breakfast meat): ").lower()
+#             if guess.lower() == 'quit':
+#                 break
+#             guesses -= 1
+#         else: 
+#             out_of_guesses = True
 
-    if guess.lower() == "quit":
-        print("Goodbye!")
-        quit()
+#     if guess.lower() == "quit":
+#         print("Goodbye!")
+#         quit()
 
-    if out_of_guesses: 
-        print("La-hoo-sa-her! Better luck next time.")
-    else: 
-        print("You got it! Congratulations!")
+#     if out_of_guesses: 
+#         print("La-hoo-sa-her! Better luck next time.")
+#     else: 
+#         print("You got it! Congratulations!")
 
-    # resetting logic
-    total_participants += 1
-    out_of_guesses = False
-    guesses = 3
+#     # resetting logic
+#     total_participants += 1
+#     out_of_guesses = False
+#     guesses = 3
 
 
 # import random
