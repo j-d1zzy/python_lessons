@@ -140,21 +140,103 @@ def oldest_dwarf(age1, age2, age3):
 # {Put into notes to declutter terminal.} print("Done with loop!")
 
 # Guessing game!
+# here jord
+import random
 
-secret_word = "bacon"
+# insult = ["wretch", "imbecile", ""]
+foods = ["bacon", "sausage", "tuna"]
+
 guess = ""
-guess_count = 0
-guess_limit = 3
+guesses = 3
 out_of_guesses = False
+total_participants = 1
+game_is_on = True
 
-while guess != secret_word and not (out_of_guesses):
-    if guess_count < guess_limit:
-        guess = input("Enter your guess (HINT: the word is a popular breakfast meat):")
-        guess_count += 1
+while game_is_on:
+    print(f"Welcome to the Guessing Game, participant #{total_participants}")
+    print(f"If you would like to quit the game at any time, name thyself 'Quit'")
+
+    name= input("What is your name? ")
+    if name.lower() == "quit":
+        game_is_on = False
+        break
+
+    secret_word = random.choice(foods)
+
+    while guess != secret_word and not (out_of_guesses):
+        if guesses <= 3 and guesses > 0:
+            print(f"You have {guesses} attempts left, {name}.")
+            guess = input(f"Enter your guess, {name} (HINT: the word is a popular breakfast meat): ").lower()
+            if guess.lower() == 'quit':
+                break
+            guesses -= 1
+        else: 
+            out_of_guesses = True
+
+    if guess.lower() == "quit":
+        print("Goodbye!")
+        quit()
+
+    if out_of_guesses: 
+        print("La-hoo-sa-her! Better luck next time.")
     else: 
-        out_of_guesses = True
-    
-if out_of_guesses: 
-    print("La-hoo-sa-her! Better luck next time.")
-else: 
-    print("You got it! Congratulations!")
+        print("You got it! Congratulations!")
+
+    # resetting logic
+    total_participants += 1
+    out_of_guesses = False
+    guesses = 3
+
+
+# import random
+
+# def reset_game():
+#     my_number = random.randint(1, 4)
+#     return "Guess", my_number, False
+
+# breakfast_meats = ["bacon", "sausage", "ham", "chorizo", "steak", "chicken", "turkey", "bologna", "prosciutto", "spam"]
+# total_participants = 1
+# game_is_on = True
+
+# while game_is_on:
+#     # start of our game loop
+#     print(f"Welcome to the Guessing Game, participant #{total_participants}")
+#     print(f"If you would like to quit the game at any time, name thyself 'Quit'")
+
+#     name = input("What is your name? ")
+#     if name.lower() == "quit":
+#         game_is_on = False
+#         break
+
+#     secret_word = random.choice(breakfast_meats)
+
+#     # at the beginning of each loop, reset the values for guess, guesses and the status out of guesses
+#     # it is saying guess = ""
+#     # it is giving a number to the number of guesses allowed
+#     # it is setting out of guesses to false
+#     guess, guesses, out_of_guesses = reset_game()
+
+#     while guess != secret_word and not out_of_guesses:
+#         if guesses > 0:
+#             print(f"You have {guesses} attempts left, {name}.")
+#             guess = input(f"Enter your guess, {name} (HINT: the word is a popular breakfast meat): ").lower()
+#             if guess.lower() == 'quit':
+#                 break
+#             guesses -= 1
+#         else: 
+#             out_of_guesses = True
+
+#     if guess.lower() == "quit":
+#         print("Goodbye!")
+#         break
+
+#     if out_of_guesses: 
+#         print("La-hoo-sa-her! Better luck next time.")
+#     else: 
+#         print("You got it! Congratulations!")
+
+#     # resetting logic
+#     total_participants += 1
+
+#     # end of our game loop
+
