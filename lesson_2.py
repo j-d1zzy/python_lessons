@@ -287,3 +287,43 @@
 #     for col in row:
 #         print(col)
 
+# Translator!
+
+# Giraffe Language
+# all vowels become g
+
+# def translate(phrase):
+#     translation = ""
+#     for letter in phrase:
+#         if letter in "aeiou":
+#             translation = translation + "g"
+#         elif letter in "AEIOU":
+#             translation = translation + "G"
+#         else: translation = translation + letter
+#     return translation
+
+# print(translate(input("Enter a phrase: ")))
+
+# Try/Except
+
+# try:
+#     value = 10 / 0
+#     number = int(input("Enter a number: "))
+#     print(number)
+# except ZeroDivisionError:
+#     print("You cannot divide by zero, fool. ")
+# except ValueError:
+#     print("No, enter a number. ")
+
+# It is preferred for developers to except specific errors, rather than just excepting any and all errors.
+
+# Reading Files
+
+employee_file = open("employees.txt", "r")
+
+print(employee_file.readable)
+# print(employee_file.read)
+# print(employee_file.readline())
+employee_file.close()
+
+# It is important to remember 
