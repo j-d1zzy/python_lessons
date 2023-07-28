@@ -319,11 +319,51 @@
 
 # Reading Files
 
-employee_file = open("employees.txt", "r")
+# random_file = open("random.txt", "r")
 
-print(employee_file.readable)
-# print(employee_file.read)
-# print(employee_file.readline())
-employee_file.close()
+# print(random_file.readable) let us know whether the file can be read from. 
+# print(random_file.read) This reads the program for us.
+# print(random_file.readline()) Allows us to read an individual line inside the file. On completion it pauses at the start of the 
+# next line.
+# random_file.close()
 
-# It is important to remember 
+# A better way to read through each line would be to use the function:
+
+# random_file = open("random.txt", "r")
+
+# for random in random_file.readlines():
+#     print(random)
+# random_file.close()
+
+# Writing to Files
+
+# Instead of reading a file, we want to add or append something to the file. We can do this as below:
+
+# random_file = open("random.txt", "a")
+# random_file.write("bla, bla, bla.")
+# random_file.close()
+
+# Classes and Objects
+
+# The simple data types like string, boolean, integers etc, don't sufficiently encapsulate all objects in reality. 
+# For instance, a person is hard to capture in one of these data types. 
+# Instead, we can use classes, which act like a new data type.
+
+# class Student:
+    
+#     def __init__(self, name, subject, grade, is_on_probation):
+#         self.name = name
+#         self.subject = subject
+#         self.grade = grade
+#         self.is_on_probation = is_on_probation
+
+# The init function has the parameters we wanted the Student class to have. Of course, we want the student's name to not be "name"
+# so we have to tell the function to use the parameters it is provided by the object. 
+# Classes define what the data type is, where as an object is an instance of the class. 
+# If we'd defined this class initially in a different file, we can import it: from 'filename' import Student (but without quotes.)
+
+# student_1 = Student("John", "Maths", "2:1", False)
+
+# Student_1 is now a student object. We can access each of the attributes inside the object i.e. its name, grade, subject etc.
+
+# print(student_1.is_on_probation)
