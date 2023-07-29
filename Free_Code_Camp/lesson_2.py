@@ -367,3 +367,6 @@
 # Student_1 is now a student object. We can access each of the attributes inside the object i.e. its name, grade, subject etc.
 
 # print(student_1.is_on_probation)
+
+#Inheritance
+

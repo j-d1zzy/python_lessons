@@ -1,9 +1,8 @@
 # Tasks
 
 ## 1. Dwarf Class Definition
-Create a Dwarf class. Each Dwarf should have a name, profession, and a happiness level. Allow these to be set during initialization and retrieved via methods. For extra complexity, add a method that allows you to change a Dwarf's profession.
 
-- I'll start on this task.
+Create a Dwarf class. Each Dwarf should have a name, profession, and a happiness level. Allow these to be set during initialization and retrieved via methods. For extra complexity, add a method that allows you to change a Dwarf's profession.
 
 ## 2. Dwarf Generator
 
