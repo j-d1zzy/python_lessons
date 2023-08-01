@@ -1,4 +1,4 @@
-#### Lesson 3! #### 
+# Lesson 3! #
 
 '''Reminder of the BASICS
 
@@ -94,21 +94,24 @@
   print(num)
 
 5.  OPERATORS and OPERANDS
-    Consider the expression 4 + 5 = 9. Here, 4 and 5 are operands, whilst the construct that manipulates them (+) is called the operator.
+    
+  Consider the expression 4 + 5 = 9. Here, 4 and 5 are operands, whilst the construct that manipulates them (+) is called the operator.
 
-    It is important to remember that = is an assignment operator, but == is a comparison operator. 
+  It is important to remember that = is an assignment operator, but == is a comparison operator. 
+
+6. HINTING
+
+  There is a technique called hinting, which combines coding and commenting. For example, see weather_to_instruction function below:
+
+    def weather_to_instruction(weather: str) -> None:
+      if weather == 'rain':
+      print("Umbrella time!")
+    
+    The ': str' beside 'weather' is one of these hints, telling the reader that 'weather' must be a string, or, as in the case of '-> None', 
+    that the function shouldn't return anything.
 '''
 
-'''Tip Calculator App
-
-food_amount = float(input("\nHow much did your food cost? \n£"))
-tip_percent = float(input("What percent would you like to tip by?\n"))
-tip_amount = int(food_amount*(tip_percent/100))
-total = (food_amount + tip_amount)
-print("*****************************************************\nAt £" + str(food_amount) + " your tip will be £" + str(tip_amount) + " for a total of £" + str(total) + ".\n*****************************************************")
-'''
-
-'''Mini Weather App
+''' Mini Weather App
 
 The app will advise us to take an umbrella out if it's raining, otherwise to get our sunglasses.
 
@@ -119,32 +122,32 @@ if weather == "rain":
 else:
     print("Sunglasses for the masses!")
 
-# Pythonic Code:
+Pythonic Code:
 
-# score = 59
-# if score >= 60 and score <= 100:
-#     print("Pass.")
-# if 60 <= score <= 100:
-#     print("Pass.")
-# This second if function is considered to be more pythonic than the first if function, because it is more compact. 
-# else:
-#     print("You failed.")
+score = 59
+if score >= 60 and score <= 100:
+    print("Pass.")
+if 60 <= score <= 100:
+    print("Pass.")
+This second if function is considered to be more pythonic than the first if function, because it is more compact. 
+else:
+    print("You failed.")
 
-# def say_my_name():
-#     print("Hi Jordan.")
+def say_my_name():
+    print("Hi Jordan.")
 
-# This code alone will not print anything because the function has not been called. 
+This code alone will not print anything because the function has not been called. 
 
-# say_my_name()
+say_my_name()
 
-# Once the function is called, by putting the parentheses at the end, it will run the function. It allows us to run big chunks of code once.
-# To increase the dynamism of the functions that we're using, we're going to use a variable instead of a string. In this case, we have provided a parameter to the function.
+Once the function is called, by putting the parentheses at the end, it will run the function. It allows us to run big chunks of code once.
+To increase the dynamism of the functions that we're using, we're going to use a variable instead of a string. In this case, we have provided a parameter to the function.
 
-# def name_2(name="Friend", greeting="Heya,"):
-#   print(f"{greeting} {name}!")
-# '''
+def name_2(name="Friend", greeting="Heya,"):
+  print(f"{greeting} {name}!")
+'''
 
-'''#### Tip Calculator App ####
+''' Tip Calculator App
 
 food_amount = float(input("\nHow much did your food cost? \n£"))
 tip_percent = float(input("What percent would you like to tip by?\n"))
@@ -164,16 +167,14 @@ def tip_calc(
 
 tip_calc(100, 10)'''
 
-# There is a technique called hinting, which combines coding and commenting. For example, see weather_to_instruction function below:
-
-''' #### Weather-adviser App ####
+''' Weather-adviser App 
 def weather_to_instruction(weather: str) -> None:
   #'The ': str' beside 'weather' is one of these hints, telling the reader that weather must be a string, or, as in the case of '-> None', 
   #that the function shouldn't return anything.
   #if weather == 'rain':
     print("Umbrella time!")'''
 
-''' #### Bigger Guy Exercise ####
+''' Bigger Guy Exercise 
 # Write a function bigger_guy that takes in two numbers and returns the bigger one.
 
 # def bigger_guy(a: float, b: float):
