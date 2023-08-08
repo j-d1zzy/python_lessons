@@ -93,6 +93,29 @@
  
   print(num)
 
+  Lambda Functions
+
+  These are anonymous functions. This might look as follows:
+  def sum(a, b)
+    return a + b
+
+  sum2 = lambda a, b: a + b
+  print(sum2(1,2))
+
+  This is where we encounter the concept of *** implicit returns ***. This is where a return statement isn't explicit but a result is returned.
+
+  greet = lambda greet, name: f"{greet} {name}"
+  print(greet("aloha", "Jordan))
+
+  THE ENUMERATE FUNCTION
+  
+  The enumerate() function takes a collection (e.g. a tuple) and returns it as an enumerate object. The enumerate () function adds a counter as the key of the enumerate object.
+
+  THE RANGE FUNCTION
+
+  The range() function returns a sequence of numbers, starting at 0 by default, and increments by 1 (by default), and stops before a specified number.
+  
+  
 5.  OPERATORS and OPERANDS
     
   Consider the expression 4 + 5 = 9. Here, 4 and 5 are operands, whilst the construct that manipulates them (+) is called the operator.
@@ -109,6 +132,217 @@
     
     The ': str' beside 'weather' is one of these hints, telling the reader that 'weather' must be a string, or, as in the case of '-> None', 
     that the function shouldn't return anything.
+
+7. TESTING
+
+  There is a technique called assert testing, which allows you to test the correctness of your code by checking if some specific conditions
+  remain true, which can come in handy when debugging code.
+
+  Example:
+
+  For: 
+  sum2 = lambda a, b: a + b
+  assert sum(1,2) == 3
+
+8. ARRAYS (in Python they are called Lists)
+
+  Lists can hold multiple values inside them, including values of different data types. 
+
+  fruits = ["apple", "pear", "orange", "banana", "kiwi"]
+  fruits.append("watermelon")
+  fruits.append("strawberry")
+  fruits.append("biscuit")
+  print(fruits[-7])
+  for each in (fruits):
+    print(each)
+  print(fruits[0 : len(fruits) - 1])
+  print(fruits[0:8:2]) This shows every odd item. We could get even items by changing where the list begins from. See below.
+  print(fruits[1:7:2])
+  
+
+    
+    Indices
+    
+      Indices begin from 0. In the list above, apple is at position 0, pear 1, orange 2, banana 3, kiwi 4, etc.
+
+    Slicing
+
+      Slicing is when we try to present part of a list, or array, rather than the entirety.
+
+      It looks as follows print(fruits[0:2]) # but slicing is inclusive of the first number but not the second. See above.
+
+      You can use functions like the length function to help you find the full size of the list too. See above.
+      
+      Slicing also allows you to change how many steps the list will take along the index. One is the default step setting, and you don't have to 
+      actually fill in anything in the first two slots if you only want to affect the step setting. However, one should note that you can use the 
+      step setting to cycle through the list backwards too. Keep an open mind. 
+
+    Methods
+    
+      Methods are functions that can be very useful for quickly improving the functionality of our code. Plus, they save us the time it would
+      take to write the code for the function ourselves. Some examples include:
+        
+        1. append() 2. clear()  3. insert() 4. index()  5. remove() 6. count()  7. pop()  8. sort() 9. reverse() 10. split()
+
+        1. Allows you to add an item to a list.
+        2. Allows you to clear out all the items in a list.
+        3. Allow you to insert an item into the list anywhere.
+        4. Will tell you where in the index an individual element is located.
+        5. Allows you to remove items from a list.
+        6. Counts the items in the list
+        7. Allows you to remove the last element from a list and then return the new list.
+        8. Allows you to sort the items in a list.
+        9. Allows you to reverse the list.
+        10. Splits a string into a list. You can specify the separator, although whitespace is the default separator. So, the split() is actually .split(" ") by default.
+        If you wanted to split a using commas, it would like like this variable.split(",") 
+
+9. DICTIONARIES
+
+Dictionaries possess key value pairs. In other programming languages, dictionaries are called objects or maps. It is important to note that 
+dictionaries are mutable.
+
+In: 
+
+person = {"name" : "Qazi", ...} 
+
+name is the key, and Qazi is the value. 
+
+def introducer():
+  person = {
+    "name" : "Jordan",
+    "shirt" : "red",
+    "drink" : "coffee",
+    "assets" : 100,
+    "debt" : 50,
+    #"netWorth" : assets - debt. Note that this doesn't work. We need to create a function within the dictionary. This is a great use for
+    #lambda functions. See below:
+    "netWorth" : lambda: person["assets"] - person["debt"]
+  }
+  print(f'Hi, my name is {person["name"]}, I am wearing a {person["shirt"]} shirt, and my favourite hot beverage is {person["drink"]}. My net worth is £{person["netWorth"]()}')
+  
+There are helpful methods that apply to dictionaries. For an example, see below:
+
+  print(list(person.values()))
+  print(person.keys())
+  
+  introducer()
+
+It is important to note that as of Python 3.8, dictionaries, like lists, are ordered. We can see this here:
+
+things = {health: 100, name: "Qazi"}
+
+print(list(reversed(things)))
+
+10. TUPLES
+
+This data type is immutable. Essentially, a tuple is just parentheses. See an example of a tuple below:
+
+numbers = (1, 2)
+
+The tuple will have an index, in this case running from 0 to 1. 
+
+Tuples are used to store data that will never change.
+
+11. SETS
+
+Sets are an unordered collectionn data type that is iterable, mutable and has no duplicate elements. You also can't call the 0th element of a set. This means that the 
+items in a set are not indexed or stored with as a key value pair. The technical term for this property is being 'not subscriptable'.
+
+p_lang1 = ["ruby", "python", "javascript"]
+p_lang2 = ["ruby", "SQL", "JAVA", "javascript"]
+
+programming_languages = # unique languages, a.k.a. no duplicates.
+
+In order to find unique stuff, we can use sets. 
+
+p_lang = p_lang1 + p_lang2
+
+This additive process is called concatenation. However, at this stage, we haven't isolated the unique elements.
+
+print({1, 2, 2})
+
+Special Keywords
+
+List, len, max, min, set, dict. Try not to use these words when naming things.
+
+Lists are not sets. However, we can convert a list into a set by calling the set function on this list. Then, if we print the set, it will identify the unique elements for us.
+
+print(set([1,2,3]))
+print(set([1,2,2,2]))
+print(set(p_lang))
+print("SQL" in p_lang)
+
+A good example of a set is the predictive searching suggestions in the Google search engine. The engine doesn't present every search, but only the most popular *unique* searches.
+
+Create a function named 'unique', that only takes in a list and returns only unique items.
+
+def unique(stock):
+  return (set(stock))
+
+unique = lambda stock: list(set(stock))
+
+We might read the above line of code as: unique is an anonymized function which accepts a parameter called stock. The stock parameter will be a converted into a set, and then into a 
+list again. The print statement that follows must provide an argument to constitute the stock parameter, in this case a list. 
+
+print(unique(["longsword","longsword", "dagger", "dagger", "dagger", "shield", "battleaxe", "claymore", "helmet"]))
+
+12. LOOPS
+
+fruits = ["apple", "pear", "orange", "banana", "kiwi"]
+print("Fruit:", fruits[0].capitalize(), 1)
+print("Fruit:", fruits[1].capitalize(), 2)
+print("Fruit:", fruits[2].capitalize(), 3)
+print("Fruit:", fruits[3].capitalize(), 4)
+print("Fruit:", fruits[4].capitalize(), 5)
+
+Instead of doing making a list like this manually, we can use a For Loop!
+
+  FOR LOOPS
+
+  fruits = ["apple", "pear", "orange", "banana", "kiwi"]
+  
+  for each in fruits:
+    print("Fruit:", each.capitalize())
+
+  print("Fruit:", fruits[0].capitalize(), 1)
+  print("Fruit:", fruits[1].capitalize(), 2)
+  print("Fruit:", fruits[2].capitalize(), 3)
+  print("Fruit:", fruits[3].capitalize(), 4)
+  print("Fruit:", fruits[4].capitalize(), 5)
+
+  Instead of doing making a list like this manually, we can use a Loop!
+
+  for each in (enumerate(fruits)):
+    print(each[0]+1, each[1].capitalize())
+
+  Above, the fruits list is being enumerated. This means that each item in fruits is assigned a tuple-style index in the form of (0,1), where 0 is the index value and the 
+  1 is the name of the fruit: (0, "apple"), (1, "pear"), etcetera. The For Loop will print the first value of the enumerated fruits list +1, to represent the position of each 
+  in the printed list. Then, it will print the name of each item in the '1' position of the tuple (in this case the names of the fruits), and apply the capitalize method to it. 
+  An even better way to write this function would be to print it as a string, so that we can format the result more precisely:
+
+  for each in enumerate(fruits):
+  print(f"{each[0]+1}. {each[1].capitalize()}")
+
+  As these exercises demonstrate, for loops are excellent for iterating through the data in our lists, amongst other uses, and the enumerate function is a handy way to get 
+  access to an index for a list. For Loops are also great for repetitive tasks. For instance, see below:
+
+  for _ in range(10):
+   fruits.append("apple")
+
+  print(fruits)
+
+  Thanks to this use of the range function in a For Loop, we have been able to swiftly perform many tasks, without coding each task separately.
+
+  WHILE LOOPS
+
+  While Loops are fun but crazy/dangerous. The danger in writing a While Loop is creating infinite loops. They are less common than For Loops but still have important uses.
+  You can use ctrl-c on Windows to kill the command line if you create an infinite loop. See below for an example of a while loop that will run and terminate successfully:
+
+  while counter < 10:
+    print(counter+1)
+    counter += 1
+    
+
 '''
 
 ''' Mini Weather App
@@ -202,3 +436,166 @@ def weather_to_instruction(weather: str) -> None:
 #     else:
 #       return a
 # print(bigger_guy("H", "d"))'''
+
+''' List and Loop Exercises
+
+Create a function that doubles each number in a list of numbers provided to it.
+
+def double(numbers:list) -> list:
+    result=[]
+    for number in numbers:
+        result.append(int(number)*2)
+
+    return result
+
+print(double([1, 4, 7, 13]))
+
+What we have done here is defined a function which accepts a parameter we have named numbers. We have then indicated to fellow developers that the parameter should be a list.
+This should help them understand that the double function is intended to be used on a list of numbers. Within the function we have then created an empty array/list. 
+We have then used a For Loop inside our double function to take each number, multiply it by two, and then append it to the result array/list. Then, inside the scope of the 
+double function, but outside the For Loop, the result of the For Loop is returned. We are then able to pass a list of numbers into our double function and see the result
+using a print statement. 
+
+Note the three-part technique used in this exercise:
+
+# Create an empty list.
+# Loop through & append to the list.
+# Return that list.
+
+This is a very common technique in coding and it's very useful.
+
+Create a function that counts the number of words in a phrase and then returns it.
+
+def count_w(phrase: str) -> int:
+    print(len(phrase.split()))
+
+count_w("Howdy friends, it's me!")
+
+Create a function that can receive a list of numbers and return their sum. 
+
+def total(numbers: list[int]) -> int:
+  result = 0
+  for each in numbers:
+    result = result + each
+  return result
+
+print(total([1,4,7,8,10]))
+
+The tutorial found a more efficient way of writing the code, by using the += shorthand. See below:
+
+def total(numbers: list[int]) -> int:
+  result = 0
+  for each in numbers:
+    result += each
+  return result
+
+print(total([1,4,7,8,10]))      
+
+Make a function that finds the maximum value in a list of numbers.
+
+def find_max(numbers: list[int]) -> int:
+  current_max = numbers[0]
+  for each in numbers:
+    if each > current_max:
+      current_max = each
+  return current_max
+
+print(find_max([1,6,4,8,3,6,4,12,54,3,43]))
+
+'''
+
+''' Dictionary Practice
+
+Create a function that tracks word frequency.
+
+The user gives a phrase to the function. The phrase is split into parts, then those parts are checked for duplicates. For every duplicate, the counter for that string will
+increase. 
+
+def w_freq(phrase:str) -> list:
+    result = {}
+    words = phrase.split()
+    for word in words:
+      if word not in result:
+        result[word] = 1
+      else:
+        result[word] += 1
+    return result            
+    
+print(w_freq("Hello Jordan, your name is Jordan."))
+
+We could make this more dynamic by allowing the user to input the phrase that the function will be applied to. Note that words containing special characters are counted as
+unique. We would have to program the function to discount punctuation in the string.
+
+def w_freq(phrase:str) -> list:
+    result = {}
+    phrase = phrase.replace(",", "")
+    phrase = phrase.replace(".", "")
+    print(phrase)
+    words = phrase.split()
+    for word in words:
+      if word not in result:
+        result[word] = 1
+      else:
+        result[word] += 1
+    return result            
+    
+print(w_freq("Hello Jordan, your name is Jordan."))
+'''
+
+''' Higher Order Functions
+
+Map 
+
+def double(numbers:list) -> list:
+    result=[]
+    for number in numbers:
+        result.append(int(number)*2)
+
+    return result
+
+print(double([1, 4, 7, 13]))
+
+def dub_num(number):
+    return number*2
+
+# print(dub_num(1))
+
+print(list(map(dub_num, [1,2,3])))
+
+Filter
+
+The filter() function starts looping through each item inside of the list or array.
+
+numbers = [1,2,3,4,5,6,7,8,9]
+print(list(filter(lambda number: number % 2 == 0, numbers))) '''
+
+''' List Comprehensions
+
+The first step in list comprehension is to make a list which you can iterate through.
+
+numbers = [1,2,3,4,5,6,7,432,4,32,23,23,12,54]
+
+Filter and give back only even numbers:
+
+print([number for number in numbers if number % 2 == 0])
+
+This can be read as, print for me the number that you have, if for each number in the numbers list, we can divide the number by 2 and get no remainder.
+
+Filter this time and double all the numbers in the list.
+
+print([number*2 for number in numbers]) 
+
+This can be read as: for each number in the list called numbers, double that number.
+
+'''
+
+''' Special Built-in Functions
+
+These include max, len and a few others.
+
+print(max([1,2,3]))
+
+These can save you a lot of time because you won't have to code the max function manually. It is wise to know what built-in functions that your programming language uses.
+
+'''
+
