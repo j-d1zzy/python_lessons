@@ -71,7 +71,7 @@ class Dwarf:
     elif self.profession == "Lapidist":
       self.guildhall = "Jeweller's Guild"
     else:
-      self.guildhall = "Adventurer's Guild"
+      self.guildhall = "Fighter's Guild"
 
   
   def change_job(self, profession):
@@ -157,9 +157,9 @@ def simulate_year(my_dwarves):
       # For verisimilitude, we have chosen to represent the happiness levels as moods. However, for error-checking reasons, I have included the
       # dwarf.happiness in the print statement so that we can clearly see the increments and decrements.
 
-      print(f"{dwarf.name}, a {dwarf.profession} of the {dwarf.guildhall}, is feeling {dwarf.mood} ({dwarf.happiness}) in {month}.")
+      print(f"{dwarf.name}, {dwarf.profession} of the {dwarf.guildhall}, is feeling {dwarf.mood} ({dwarf.happiness}) in {month}.")
       # Report to check functionality.
 
 simulate_year(my_dwarves)
 
-#Pass the my_dwarves variable into the simulate_year function.
+# Pass the my_dwarves variable into the simulate_year function.
